@@ -1,0 +1,68 @@
+
+/*section {
+  height: 161px;
+  width: 286px;
+  position: relative;
+}
+
+div {
+  background: url('assets/bg.png') -2px -2px no-repeat;
+  background-size: cover;
+  height: 161px;
+  width: 286px;
+  transition: all 1s;
+  transition: all 3.0s cubic-bezier(0.94, 0.06, 0.94, 0.25)
+}
+
+section:hover div {
+  background-size: cover;
+  width: 143px;
+  height: 80px;
+  cursor: pointer;
+}*/
+
+/*div {
+    transform: scale(2);
+}*/
+
+/*section:hover div {
+  transform: rotate(10deg);
+}*/
+
+/*div:hover {
+    transform: rotateX(180deg);
+}*/
+
+/*div:hover {
+    transform: rotateY(180deg);
+}*/
+
+/*div:hover {
+    transform: rotateZ(180deg);
+}*/
+
+/*div:hover {
+    transform: rotate3D(1, 1, 1, 180deg);
+}*/
+
+/*section:hover div {
+  transform: translate(20px, 20px);
+}*/
+
+@keyframes blink {
+    0% {
+        color: green;
+    }
+    50% {
+        color: red;
+        transform: rotate(180deg);
+        /*transform: rotate(720deg);*/
+    }
+}
+
+p {
+    color: green;
+    font-weight: bold;
+    width: 300px;
+    animation: blink 1s infinite;
+}

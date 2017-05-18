@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS</title>
+  <meta charset="utf-8"/>
+  <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <style>
+    html, body {
+      font-family: 'Roboto', sans-serif;
+      background: #fafafa;
+    }
+
+    table {
+      display: block;
+      width: 100%;
+      overflow: auto;
+      word-break: normal;
+      word-break: keep-all
+    }
+
+    table th {
+      font-weight: bold
+    }
+
+    table th, table td {
+      padding: 6px 13px;
+      border: 1px solid #ddd
+    }
+
+    table tr {
+      background-color: #fff;
+      border-top: 1px solid #ccc
+    }
+
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8
+    }
+
+    .center > table{
+      margin: 0 auto;
+      width: auto;
+      display: table;
+    }
+
+    td > strong {
+      color: red;
+    }
+
+    .hljs-github .hljs {
+      background: #f0f0f0;
+    }
+
+    .hljs-github .hljs-tag, .hljs-github .hljs-name, .hljs-github .hljs-attribute {
+      color: #0000ff;
+    }
+
+    .hljs-github .hljs-string, .hljs-github .hljs-doctag {
+      color: #ff4e00;
+    }
+
+    .hljs-github .hljs {
+      color: #808080;
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <header class="mainheader">
+    <div class="logo">
+      <div class="divider"><a href="../index.html"><img src="Logo.png"></a>
+      </div>
+      <a href="#"><span class="logotext">CURSOR EDUCATION - CSS Animations</span></a>
+    </div>
+  </header>
+</div>
+
+<!-- ================== Slides ================== -->
+    <textarea id="source">
+
+
+
+class: center, middle
+
+.title[
+# CSS Animations
+]
+
+---
+
+
+class: center, middle
+# CSS Transitions
+<p>CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. For example, if you change the color of an element from white to black, usually the change is instantaneous. With CSS transitions enabled, changes occur at time intervals that follow an acceleration curve, all of which can be customized.</p>
+<p>&copy; Mozilla Developer Network</p>
+<figure>
+    <img src="https://developer.mozilla.org/files/4529/TransitionsPrinciple.png" alt=""><br />
+    <a href="example.html" target="_blank">Example</a>
+</figure>
+
+---
+# CSS Transitions
+
+```css
+div {
+    transition: <property> <duration> <timing-function> <delay>;
+}
+```
+
+---
+# CSS Transformations
+## scale, scaleX, scaleY
+
+```css
+div {
+    trensform: scale(2);
+}
+```
+
+---
+
+# CSS Transformations
+## rotate
+
+```css
+div {
+    transform: rotate(45deg);
+}
+```
+
+---
+
+# CSS Transformations
+## rotate3D
+
+```css
+div {
+    transform: rotateX(10deg);
+    transform: rotateY(10deg);
+    transform: rotateZ(10deg);
+}
+```
+
+---
+
+# CSS Transformations
+## translate(x, y)
+
+```css
+div {
+    transform: translate(20px, 20px);
+}
+```
+
+---
+
+# CSS Transitions
+## Functions
+
+- [Art-of-web](http://www.the-art-of-web.com/css/timing-function/)
+- [CSS3 Bezier Curve Tester](http://www.the-art-of-web.com/css/timing-function/)
+- [One more Generator](http://www.roblaplaca.com/examples/bezierBuilder/)
+
+---
+
+##What you could do with css?
+
+- [Example](https://codepen.io/keithclark/pen/ksayr)
+- [3D Builder](http://tridiv.com/)
+
+---
+
+#CSS Animations
+
+<p>CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation's style, as well as possible intermediate waypoints.</p>
+<p>&copy; Mozilla Developer Network</p>
+
+---
+
+#CSS Animations
+
+##Sub-properties
+
+<dl>
+<dt>animation-delay</dt>
+<dd>Configures the delay between the time the element is loaded and the beginning of the animation sequence.</dd>
+<dt>animation-direction</dt>
+<dd>Configures whether or not the animation should alternate direction on each run through the sequence or reset to the start point and repeat itself.</dd>
+<dt>animation-duration</dt>
+<dd>Configures the length of time that an animation should take to complete one cycle.</dd>
+<dt>animation-iteration-count</dt>
+<dd>Configures the number of times the animation should repeat; you can specify infinite to repeat the animation indefinitely.</dd>
+</dl>
+
+---
+#CSS Animations
+
+##Sub-properties (part2)
+
+<dl>
+<dt>animation-name</dt>
+<dd>Specifies the name of the @keyframes at-rule describing the animation's keyframes.</dd>
+<dt>animation-play-state</dt>
+<dd>Lets you pause and resume the animation sequence.</dd>
+<dt>animation-timing-function</dt>
+<dd>Configures the timing of the animation; that is, how the animation transitions through keyframes, by establishing acceleration curves.</dd>
+<dt>animation-fill-mode</dt>
+<dd>Configures what values are applied by the animation before and after it is executing.</dd>
+</dl>
+
+---
+#Let's Practice
+
+---
+
+class: center, middle
+#Thank you :)
+
+    </textarea>
+<!-- ================== End of Slides ================== -->
+
+<script src="js/remark-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript">remark.create({highlightStyle: 'github'});</script>
+</body>
+</html>
