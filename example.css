@@ -1,5 +1,5 @@
 
-/*section {
+section {
   height: 161px;
   width: 286px;
   position: relative;
@@ -11,7 +11,7 @@ div {
   height: 161px;
   width: 286px;
   transition: all 1s;
-  transition: all 3.0s cubic-bezier(0.94, 0.06, 0.94, 0.25)
+  /*transition: all 3.0s cubic-bezier(0.94, 0.06, 0.94, 0.25)*/
 }
 
 section:hover div {
@@ -19,7 +19,7 @@ section:hover div {
   width: 143px;
   height: 80px;
   cursor: pointer;
-}*/
+}
 
 /*div {
     transform: scale(2);
@@ -49,14 +49,14 @@ section:hover div {
   transform: translate(20px, 20px);
 }*/
 
-@keyframes blink {
+/*@keyframes blink {
     0% {
         color: green;
     }
     50% {
         color: red;
         transform: rotate(180deg);
-        /*transform: rotate(720deg);*/
+        transform: rotate(720deg);
     }
 }
 
@@ -65,4 +65,4 @@ p {
     font-weight: bold;
     width: 300px;
     animation: blink 1s infinite;
-}
+}*/
