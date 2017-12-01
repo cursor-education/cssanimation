@@ -96,10 +96,6 @@ class: center, middle
 # CSS Transitions
 <p>CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. For example, if you change the color of an element from white to black, usually the change is instantaneous. With CSS transitions enabled, changes occur at time intervals that follow an acceleration curve, all of which can be customized.</p>
 <p>&copy; Mozilla Developer Network</p>
-<figure>
-    <img src="https://developer.mozilla.org/files/4529/TransitionsPrinciple.png" alt=""><br />
-    <a href="example.html" target="_blank">Example</a>
-</figure>
 
 ---
 # CSS Transitions
@@ -112,6 +108,17 @@ div {
 
 ---
 # CSS Transformations
+
+- translate()
+- rotate()
+- scale()
+- skewX()
+- skewY()
+
+---
+
+# CSS Transformations
+
 ## scale, scaleX, scaleY
 
 ```css
@@ -123,24 +130,12 @@ div {
 ---
 
 # CSS Transformations
-## rotate
+
+## rotate, rotateX, rotateY, rotateZ
 
 ```css
 div {
     transform: rotate(45deg);
-}
-```
-
----
-
-# CSS Transformations
-## rotate3D
-
-```css
-div {
-    transform: rotateX(10deg);
-    transform: rotateY(10deg);
-    transform: rotateZ(10deg);
 }
 ```
 
@@ -157,19 +152,14 @@ div {
 
 ---
 
-# CSS Transitions
-## Functions
+# CSS Transformations
+## skewX(), skewY(), skew()
 
-- [Art-of-web](http://www.the-art-of-web.com/css/timing-function/)
-- [CSS3 Bezier Curve Tester](http://www.the-art-of-web.com/css/timing-function/)
-- [One more Generator](http://www.roblaplaca.com/examples/bezierBuilder/)
-
----
-
-##What you could do with css?
-
-- [Example](https://codepen.io/keithclark/pen/ksayr)
-- [3D Builder](http://tridiv.com/)
+```css
+div {
+    transform: skewX(20px);
+}
+```
 
 ---
 
